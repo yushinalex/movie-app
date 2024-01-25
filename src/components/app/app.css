@@ -1,0 +1,41 @@
+html {
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  background-color: #e3e3e3;
+}
+
+.movie-app {
+  max-width: 1010px;
+  margin: 0 auto;
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+.fetchError.ant-alert .ant-alert-content {
+  flex: none;
+  font-family: Inter, sans-serif;
+}
+
+.fetchError.ant-alert,
+.offline.ant-alert {
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.offline.ant-alert .ant-alert-content {
+  flex: none;
+  font-family: Inter, sans-serif;
+  font-size: 30px;
+}

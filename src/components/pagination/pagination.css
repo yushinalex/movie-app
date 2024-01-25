@@ -1,0 +1,29 @@
+.movie-pagination {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.movie-pagination .ant-pagination {
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+}
+
+@media (max-width: 520px) {
+  .ant-pagination .ant-pagination-jump-next {
+    min-width: 0;
+  }
+}
+
+.movie-pagination .ant-pagination .ant-pagination-item {
+  font-family: Inter, sans-serif;
+}
+
+.movie-pagination .ant-pagination .ant-pagination-item-active {
+  background-color: #1677ff;
+}
+
+.movie-pagination .ant-pagination .ant-pagination-item-active a {
+  color: #fff;
+  font-weight: 400px;
+}

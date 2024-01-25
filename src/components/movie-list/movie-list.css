@@ -1,0 +1,33 @@
+.movies {
+  margin: 0 36px;
+}
+
+.movie-list {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  display: grid;
+  gap: 36px;
+}
+
+@media (min-width: 1010px) {
+  .movie-list {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+}
+
+.ant-spin {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.movies .ant-alert {
+  justify-content: center;
+  min-height: 100px;
+}
+
+.movies .ant-alert .ant-alert-content {
+  flex: none;
+  font-family: Inter, sans-serif;
+}

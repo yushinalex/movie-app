@@ -1,0 +1,149 @@
+.card {
+  display: grid;
+  grid-template-columns: 185px 1fr;
+  height: 278px;
+  box-shadow: 0 4px 12px 0 #00000026;
+  overflow: hidden;
+}
+
+@media (max-width: 520px) {
+  .card {
+    position: relative;
+  }
+}
+
+@media (max-width: 520px) {
+  .card {
+    grid-template-columns: 0 1fr;
+  }
+}
+
+.card-description {
+  padding-top: 10px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-poster {
+  display: flex;
+}
+
+.card-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media (max-width: 520px) {
+  .card-image {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    width: 60px;
+    height: 91px;
+  }
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
+  margin-bottom: 7px;
+}
+
+@media (max-width: 520px) {
+  .card-top,
+  .card-info {
+    margin-left: 60px;
+  }
+}
+
+.card-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  align-self: center;
+  max-height: 210px;
+  padding-right: 5px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.card-rated {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-rated--grey {
+  border: 2px solid #e3e3e3;
+}
+
+.card-rated--green {
+  border: 2px solid #66e900;
+}
+
+.card-rated--yellow {
+  border: 2px solid #e9d100;
+}
+
+.card-rated--orange {
+  border: 2px solid #e97e00;
+}
+
+.card-rated--red {
+  border: 2px solid #e90000;
+}
+
+.card-info {
+  margin-bottom: 7px;
+}
+
+.card-date {
+  line-height: 22px;
+  margin-bottom: 7px;
+  color: #827e7e;
+}
+
+.card-tag {
+  margin-right: 8px;
+  display: inline-block;
+  line-height: 15px;
+  padding: 2px 3px;
+  background-color: #fafafa;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  color: #000000a6;
+}
+
+.card-about {
+  flex-grow: 1;
+  padding-right: 20px;
+}
+
+.card-text {
+  margin: 0;
+  line-height: 22px;
+  max-height: 130px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+.card-rating.ant-rate {
+  padding-right: 20px;
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+
+.card-rating.ant-rate .ant-rate-star:not(:last-child) {
+  margin-right: 6px;
+}

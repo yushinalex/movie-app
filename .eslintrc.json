@@ -40,6 +40,8 @@
     "jsx-a11y/no-autofocus": "off",
     "react/destructuring-assignment": "off",
     "react/sort-comp": "off",
+    "no-await-in-loop": "off",
+    "react/forbid-prop-types": "off",
     "import/order": [
       2,
       {

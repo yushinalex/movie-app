@@ -1,0 +1,32 @@
+.header {
+  padding-top: 30px;
+  padding-bottom: 36px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+}
+
+.menu .ant-menu {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+}
+
+.menu .ant-menu-light.ant-menu-horizontal > .ant-menu-item::after {
+  inset-inline: 0px;
+}
+
+.search-form {
+  margin: 0 36px;
+  margin-top: 36px;
+}
+
+.search-form .ant-input {
+  height: 40px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 9px 12px;
+}
