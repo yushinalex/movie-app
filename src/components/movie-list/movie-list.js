@@ -139,14 +139,15 @@ export default class MovieList extends Component {
         : 0;
 
       return (
-        <Card
-          {...props}
-          id={id}
-          editRatings={this.props.editRatings}
-          savedRating={savedRating}
-          sessionId={this.props.sessionId}
-          key={id}
-        />
+        <li key={id}>
+          <Card
+            {...props}
+            id={id}
+            editRatings={this.props.editRatings}
+            savedRating={savedRating}
+            sessionId={this.props.sessionId}
+          />
+        </li>
       );
     });
 
